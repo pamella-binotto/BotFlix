@@ -3,7 +3,7 @@ import fetch from "node-fetch";
 import cors from "cors";
 
 const app = express();
-app.use(cors()); // Permite que o front-end local faça requisições
+app.use(cors()); 
 app.use(express.json());
 
 app.post("/proxy-botflix", async (req, res) => {
